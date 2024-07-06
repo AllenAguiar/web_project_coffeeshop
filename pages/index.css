@@ -117,7 +117,7 @@
   line-height: 0;
 }
 
-.header__address {
+.header__paragraph-address {
   display: flex;
   align-items: flex-end;
   margin: 0;
