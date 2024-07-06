@@ -57,11 +57,6 @@
 }
 /*Header content*/
 
-.header__content {
-  display: flex;
-  justify-content: space-between;
-}
-
 .header__title {
   max-width: 709px;
   margin-top: 128px;
