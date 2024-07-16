@@ -60,6 +60,7 @@
 .header__title {
   max-width: 709px;
   margin-top: 128px;
+  margin-bottom: 0;
   color: #2f80ed;
   font-family: "Noto Serif", "Times New Roman", Times, serif;
   font-style: italic;
@@ -98,8 +99,6 @@
 /*Header footer*/
 .header__footer {
   display: flex;
-  justify-content: space-between;
-  width: 100%;
   margin-top: auto;
   box-sizing: border-box;
   font-family: "Inter", Arial, Helvetica, sans-serif;
@@ -108,21 +107,23 @@
   font-size: 16px;
   line-height: 20px;
   color: #838383;
-  padding: 0;
+  align-items: flex-end;
+  /*align-items: center;*/
+  justify-content: space-between;
 }
 
 .header__paragraph {
   margin: 0;
-  padding: 0;
-  line-height: 0;
 }
 
+/*
 .header__address {
   display: flex;
-  align-items: flex-end;
+
   margin: 0;
   padding: 0;
 }
+  */
 
 /*Main_recipes*/
 .recipes {
