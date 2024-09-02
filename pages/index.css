@@ -201,7 +201,6 @@
 
 .reservation {
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
   background-color: #d9e7ff;
@@ -216,6 +215,28 @@
   padding: 100px 0px 120px;
 }
 
-.resevation__title {
+.reservation__tittle {
   color: #000000;
+  padding-top: 0;
+  margin-top: 0;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 52px;
+}
+
+.form__reservation {
+  border: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+label {
+  align-items: flex-start;
+}
+
+input [type="text"] {
 }

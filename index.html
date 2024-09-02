@@ -127,17 +127,38 @@
           </div>
         </section>
         <section id="reservation" class="reservation">
-          <h2 class="reservation__tittle">Reservar uma mesa</h2>
-          <label>Nome:</label>
-          <input />
-          <label>Número de convidados:</label>
-          <input />
-          <label>Data e hora:</label>
-          <input />
-          <label>Seu e-mail:</label>
-          <input />
-          <button>Reservar uma mesa</button>
-          <label for="">Eu concordo com os termos de uso</label>
+          <div>
+            <h2 class="reservation__tittle">Reservar uma mesa</h2>
+          </div>
+          <form>
+            <fieldset class="form__reservation">
+              <label>Nome:</label>
+              <input type="text" name="Nome" placeholder="Nome" required />
+              <label>Número de convidados:</label>
+              <input
+                type="number"
+                min="1"
+                max="8"
+                name="Numero"
+                placeholder="1-8"
+                required
+              />
+              <label>Data e hora:</label>
+              <input type="datetime-local" />
+              <label>Seu e-mail:</label>
+              <input
+                type="email"
+                name="Email"
+                placeholder="email@email.com"
+                required
+              />
+              <button type="submit">Reservar uma mesa</button>
+              <label for="">
+                <input type="checkbox" required />Eu concordo com os termos de
+                uso
+              </label>
+            </fieldset>
+          </form>
         </section>
       </main>
       <footer id="footer" class="footer"></footer>
