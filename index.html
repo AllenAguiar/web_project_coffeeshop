@@ -131,12 +131,19 @@
             <h2 class="reservation__tittle">Reservar uma mesa</h2>
           </div>
           <form>
-            <fieldset class="form__reservation">
+            <fieldset class="reservation__form">
               <label>Nome:</label>
-              <input type="text" name="Nome" placeholder="Nome" required />
+              <input
+                type="text"
+                class="reservation__item reservation__item_input"
+                name="Nome"
+                placeholder="Nome e sobrenome"
+                required
+              />
               <label>Número de convidados:</label>
               <input
                 type="number"
+                class="reservation__item reservation__item_input"
                 min="1"
                 max="8"
                 name="Numero"
@@ -144,19 +151,29 @@
                 required
               />
               <label>Data e hora:</label>
-              <input type="datetime-local" />
+              <input
+                type="datetime-local"
+                class="reservation__item reservation__item_input"
+                id="date-hour"
+                name="date-hour"
+                required
+              />
               <label>Seu e-mail:</label>
               <input
                 type="email"
+                class="reservation__item reservation__item_input"
                 name="Email"
                 placeholder="email@email.com"
                 required
               />
-              <button type="submit">Reservar uma mesa</button>
-              <label for="">
-                <input type="checkbox" required />Eu concordo com os termos de
-                uso
-              </label>
+              <button type="submit" class="reservation__button">
+                Reservar uma mesa
+              </button>
+              <div class="reservation__check">
+                <label for="">
+                  <input type="checkbox" />Eu concordo com os termos de uso
+                </label>
+              </div>
             </fieldset>
           </form>
         </section>

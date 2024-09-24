@@ -201,23 +201,23 @@
 
 .reservation {
   display: flex;
-  align-items: center;
   flex-direction: column;
   background-color: #d9e7ff;
   background-image: url(../images/background_reservation.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-
-  height: 100vh;
+  height: 100%;
   min-height: 720px;
   max-height: 385px;
   padding: 100px 0px 120px;
 }
 
 .reservation__tittle {
+  display: flex;
+  justify-content: center;
   color: #000000;
-  padding-top: 0;
+  padding-top: 100;
   margin-top: 0;
   font-family: "Inter", Arial, Helvetica, sans-serif;
   font-style: normal;
@@ -226,17 +226,23 @@
   line-height: 52px;
 }
 
-.form__reservation {
+.reservation__form {
   border: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  column-gap: 32px;
 }
 
-label {
-  align-items: flex-start;
+.reservation__item {
 }
 
-input [type="text"] {
+.reservation__item_input {
+}
+
+.reservation__button {
+}
+
+.reservation__check {
 }
