@@ -131,45 +131,50 @@
             <h2 class="reservation__tittle">Reservar uma mesa</h2>
           </div>
           <form>
-            <fieldset class="reservation__form">
-              <label>Nome:</label>
-              <input
-                type="text"
-                class="reservation__item reservation__item_input"
-                name="Nome"
-                placeholder="Nome e sobrenome"
-                required
-              />
-              <label>Número de convidados:</label>
-              <input
-                type="number"
-                class="reservation__item reservation__item_input"
-                min="1"
-                max="8"
-                name="Numero"
-                placeholder="1-8"
-                required
-              />
-              <label>Data e hora:</label>
-              <input
-                type="datetime-local"
-                class="reservation__item reservation__item_input"
-                id="date-hour"
-                name="date-hour"
-                required
-              />
-              <label>Seu e-mail:</label>
-              <input
-                type="email"
-                class="reservation__item reservation__item_input"
-                name="Email"
-                placeholder="email@email.com"
-                required
-              />
-              <button type="submit" class="reservation__button">
+            <fieldset class="fieldset__form">
+              <label class="fieldset__label"
+                >Nome:
+                <input
+                  type="text"
+                  class="fieldset__form_item fieldset__form_input"
+                  name="Nome"
+                  placeholder="Nome e sobrenome"
+                  required
+                />
+              </label>
+              <label class="fieldset__label"
+                >Número de convidados:
+                <input
+                  type="number"
+                  class="fieldset__form_item fieldset__form_input"
+                  min="1"
+                  max="8"
+                  name="Numero"
+                  placeholder="1-8"
+                  required
+              /></label>
+              <label class="fieldset__label"
+                >Data e hora:
+                <input
+                  type="datetime-local"
+                  class="fieldset__form_item fieldset__form_input"
+                  id="date-hour"
+                  name="date-hour"
+                  required
+              /></label>
+              <label class="fieldset__label"
+                >Seu e-mail:
+                <input
+                  type="email"
+                  class="fieldset__form_item fieldset__form_input"
+                  name="Email"
+                  placeholder="email@email.com"
+                  required
+              /></label>
+              <button type="submit" class="fieldset__button">
                 Reservar uma mesa
               </button>
-              <div class="reservation__check">
+              <div class="fieldset__check">
                 <label for="">
                   <input type="checkbox" />Eu concordo com os termos de uso
                 </label>
